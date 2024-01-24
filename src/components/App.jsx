@@ -32,7 +32,6 @@ export const App = () => {
 
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
-    JSON.parse(localStorage.getItem('contacts'));
   }, [contacts]);
 
   const filterContact = contacts.filter(({ name }) =>
